@@ -1,4 +1,4 @@
-import "./mention-list.css";
+import "./styles.css";
 
 import { forwardRef, useEffect, useImperativeHandle, useState } from "react";
 
@@ -69,7 +69,7 @@ export default forwardRef((props: ForwardPropsType, ref) => {
             key={index}
             onClick={() => selectItem(index)}
           >
-            {item}
+            <span>{item.slice(0, 1)}</span> {item}
           </button>
         ))
       ) : (

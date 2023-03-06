@@ -1,0 +1,65 @@
+#tippy-17 .tippy-box {
+  background-color: #fff;
+}
+#tippy-17 .tippy-box .tippy-arrow {
+  color: #fff;
+}
+.items {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  overflow-y: scroll;
+  position: relative;
+  height: 156px;
+}
+
+.items::-webkit-scrollbar {
+  width: 0;
+}
+
+.item {
+  width: 100%;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+
+  margin: 0;
+  padding: 4px 10px;
+  text-align: left;
+  color: #3c454e;
+}
+
+.item:hover {
+  border-color: transparent;
+  background: #e4f2ff;
+  border-radius: 0;
+}
+
+.item:focus {
+  outline: 0;
+}
+
+.item > span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  background: #1890ff;
+  color: #ffffff;
+  font-size: 0.8rem;
+
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+}

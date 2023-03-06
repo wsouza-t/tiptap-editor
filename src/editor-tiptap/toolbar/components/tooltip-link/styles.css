@@ -1,0 +1,88 @@
+#tippy-15 {
+  z-index: 2 !important;
+}
+.tractian-editor-tooltip-link-tt-portal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+.tractian-editor-tooltip-link-tt {
+  min-width: 260px;
+  padding: 12px 18px;
+
+  position: absolute;
+  z-index: 1;
+
+  background: rgb(255 255 255 / 97%);
+  box-shadow: 0 0 20px rgb(0 0 0 / 17%);
+
+  border-radius: 6px;
+  border: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+
+  transform: translate3d(-25px, -110px, 0);
+}
+
+.tractian-editor-tooltip-link-tt::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -14.5px;
+
+  border: 10px solid rgb(255 255 255 / 97%);
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+button.tractian-editor-tooltip-link-tt-close {
+  width: 24px;
+  height: 24px;
+  outline: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: transparent;
+  padding: 0;
+}
+
+button.tractian-editor-tooltip-link-tt-close:hover {
+  border: 0;
+}
+button.tractian-editor-tooltip-link-tt-close:focus {
+  outline: 0;
+}
+button.tractian-editor-tooltip-link-tt-close:hover svg {
+  opacity: 0.7;
+}
+
+.tractian-editor-tooltip-link-tt > h2 {
+  color: #121212;
+  font-size: 0.9rem;
+  line-height: 0.8rem;
+  font-weight: bold;
+}
+
+.tractian-editor-tooltip-link-tt > div {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+
+  margin-top: 12px;
+}

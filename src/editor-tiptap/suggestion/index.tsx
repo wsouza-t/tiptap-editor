@@ -2,7 +2,7 @@ import { ReactRenderer } from "@tiptap/react";
 import { RefAttributes } from "react";
 import tippy from "tippy.js";
 
-import MentionList, { ForwardPropsType } from "./mention-list.jsx";
+import MentionList, { ForwardPropsType } from "./mention-list";
 
 export default {
   items: ({ query }: { query: string }) => {

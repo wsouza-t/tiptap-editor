@@ -1,0 +1,55 @@
+.tractian-editor-toolbar-tt {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 8px;
+  gap: 4px;
+
+  border-bottom: 1px solid rgb(0 0 0 / 2.2%);
+}
+
+.tractian-editor-toolbar-tt > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 4px;
+
+  width: 27px;
+  height: 27px;
+
+  border-radius: 4px;
+
+  background: transparent;
+  border: 0;
+
+  transition: 0.2s;
+}
+
+.tractian-editor-toolbar-tt > button:hover {
+  background: #efefef;
+}
+
+.tractian-editor-toolbar-tt > button:focus {
+  background: #efefef;
+  border: 0;
+  outline: 0;
+}
+
+.tractian-editor-toolbar-tt > button svg:focus {
+  outline: 0;
+}
+
+.tractian-editor-toolbar-tt > button:hover svg path {
+  stroke: #121212;
+}
+
+.tractian-editor-toolbar-tt > button.is-active {
+  background: #efefef;
+}
+
+.tractian-editor-toolbar-tt > button.is-active svg path {
+  stroke: #121212;
+}

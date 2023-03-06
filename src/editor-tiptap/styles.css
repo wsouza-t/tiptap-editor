@@ -1,0 +1,98 @@
+.tractian-editor-tt {
+  width: 100%;
+  min-width: 370px;
+  min-height: 139px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  border: 1px solid #f0f0f0;
+  background: #ffffff;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+
+  padding: 0px;
+}
+
+.tractian-editor-tt.tractian-editor-tt-focused {
+  border-color: #c9c9c9;
+}
+
+.tractian-editor-tt button {
+  opacity: 0.5;
+}
+
+.tractian-editor-tt.tractian-editor-tt-focused button {
+  opacity: 1;
+}
+
+.tractian-editor-tt-editable {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.ProseMirror {
+  width: 100%;
+  height: 100%;
+
+  outline: 0;
+
+  color: #4e4e4e;
+
+  padding: 0 8px 8px;
+  box-sizing: border-box;
+}
+
+.ProseMirror p {
+  margin: 0;
+}
+
+.ProseMirror span.tractian-editor-tt-mention {
+  background: #e4f2ff;
+  border-radius: 4px;
+  padding: 1px 6px;
+  color: #2567a5;
+}
+
+.ProseMirror a {
+  cursor: text;
+}
+
+.ProseMirror a:hover {
+  text-decoration: underline;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.tractian-editor-tooltip-tippy {
+  background-color: #333;
+  border-radius: 4px;
+  padding: 4px 6px;
+  color: #ffffff;
+}
+
+.tractian-editor-tooltip-tippy::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -11.5px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 8px solid #333;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
